@@ -4,9 +4,20 @@
 ## 웹 애플리케이션 서버(Web Application Server, WAS)
 하는 일: 쿼리를 통한 요청 결과 반환
 
-### 파이썬 WAS 서버
+### 서버 사이드 렌더링
 
-### 자바 WAS 서버
+**JSP**: Java 기반의 서버 사이드 렌더링 기술입니다. Java 및 Apache Tomcat과 같은 서블릿 컨테이너에서 실행됩니다.
+```
+<p>페이지에 오신 것을 환영합니다, <%= request.getAttribute("name") %>님!
+오늘은 <%= new java.text.SimpleDataFormat("MM/dd/yyyy").format(new java.util.Date()) %>입니다.</p>
+```
+
+**Flask와 Jinja2**: 파이썬을 기반으로하는 웹 프레임워크입니다. jinja2라는 템플릿 엔진을 사용해 서버 사이드 렌더링을 구현합니다.
+
+```
+<p>페이지에 오신 것을 환영합니다, {{ name }}님!
+오늘은 {{ now.strftime("%m/%d/%Y") }}입니다.</p>
+```
 
 
 ## Tomcat
