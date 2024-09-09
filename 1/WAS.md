@@ -4,6 +4,11 @@
 ## 웹 애플리케이션 서버(Web Application Server, WAS)
 하는 일: 쿼리를 통한 요청 결과 반환
 
+### 파이썬 WAS 서버
+
+### 자바 WAS 서버
+
+
 ## Tomcat
 
 Tomcat이란 아파치 재단에서 만든 오픈 소스 WAS(Web Application Server)입니다. Tomcat은 Java Servlet과 JSP가 실행할 수 있는 환경을 제공하여 동적인 페이지를 생성합니다. 그리고 DB 연결 및 데이터 조작, 다른 응용프로그램들과 상호 작용이 가능합니다.
