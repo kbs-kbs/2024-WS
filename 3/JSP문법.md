@@ -175,30 +175,11 @@ ServletRequest 객체에 매개변수를 추가하는 코드를 생성한다.
 <jsp:element>	임의의 XML 태그나 HTML 태그를 생성한다.
  
 
-### JSP 내장 객체
+### JSP Implicit Objects(내장 객체)내장 객체
 
 JSP 기술 사양서에 정의된 필수적인 9개 객체
-request, response, pageContext, session, application, config, out, page, exception
-JSP에서 별도 선언 없이 사용 가능
- 
-
-템플릿 데이터
-
-
 
  
-
-
- 
-
-JSP 전용 태그
-
-
- 
-
-
-
-JSP Implicit Objects(내장 객체)
 request, response, pageContext, session, application, config, out, page, exception
 JSP에서 자바 코드를 작성할때 별도의 선언 없이 사용할 수 있는 자바 객체이다.
 
@@ -231,7 +212,7 @@ JSP 기술 사양서에는 JSP로 서블릿을 만들 때 반드시 이 인터�
 get 방식은 브라우저의 인코딩 방식을 따라가는데   
 post 방식은 요청 파일에서 지정한 인코딩 방식으로 따라간다.
 
-## request 객체 예제
+### request 객체 예제
 
 **form.jsp**
 
