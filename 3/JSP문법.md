@@ -78,3 +78,17 @@ name = <%= nameParam[0] %>
 </html>
 
 ```
+
+## 기본객체pageContext
+
+|리턴 타입|메서드|설명|
+|---|---|---|
+|*ServletRequest*|getRequest()| |
+|*ServletResponse*|getResponse()| |
+|*HttpSession*|getSession()| |
+|*ServletContext*|getServletContext()| |
+|*ServletConfig*|getServletConfig()| |
+|*JspWriter*|getOut()| |
+|*Exception*|getException()||
+|*Object*|getPage()| |
+
