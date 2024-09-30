@@ -10,9 +10,6 @@
 클라이언트로 출력되는 콘텐츠
 HTML, 자바스크립트, 스타일 시트, JSON, XML, 일반 텍스트 등이 여기에 해당한다.
 
-템플릿 데이터의 예
-템플릿 데이터는 클라이언트로 출력되는 콘텐츠이다.
-
 템플릿 데이터는 서블릿 코드를 생성할 때 출력문(톰캣의 경우 out.println)으로 바뀐다.
 
 jsp로부터 생성된 자바 서블릿 파일의 소스를 열어보면 템플릿 데이터가 자바 출력문으로 변환된 것을 확인할 수 있다.
@@ -20,14 +17,17 @@ jsp로부터 생성된 자바 서블릿 파일의 소스를 열어보면 템플�
 ### JSP 전용 태그
 
 서블릿 생성 시 특정 자바 코드로 바뀌는 태그
-1. Directives(<%@ %>)
-2. Scriptlet Elements(<% %>)
-3. Declarations(<%! %>)
-4. Expressions(<%= %>)
-5. JSP Action(<jsp:...>)
 
-**Directives(지시자):**
-<%@ 지시자 속성="값" 속성="값" ... %>
+1. 지시자(Directives): `<%@ ... %>`
+2. 스크립트릿(Scriptlet): `<% ... %>`
+3. Declarations: `<%! ... %>`
+4. 표현식(Expressions): `<%= ... %>`
+5. JSP 액션(JSP Action): `<jsp: />`
+
+**Directives(지시자)**
+
+`<%@ 지시자 속성="값" 속성="값" ... %>`
+
 JSP 지시자는 지시자, 속성에 따라 자바 코드를 생성한다.
 
 JSP 지시자에는 page, taglib, include가 있다.
@@ -154,15 +154,13 @@ JSP 표현식의 예
 
 따라서 JSP 표현식 안에는 out.println()의 안자값으로 넣을 수 있는 결과를 반환하는 자바 코드가 와야한다.
 
-**5. JSP Action:**
+**5. JSP Action**
+
 JSP에서 기본으로 제공하는 태그들의 집합을 'JSP Action'이라 한다.
 
 다음은 JSP 2.2에서 제공하는 Standard Action들이다.
 
- 
-
-액션	설명
-<jsp:useBean>	자바 인스턴스를 준비한다. 보관소에서 자바 인스턴스를 꺼내거나 자바 인스턴스를 새로 만들어 보관소에 저장하는 코드를 생성한다. 자바 인스턴스를 자바 빈(Java Bean)이라고 부른다.
+- `<jsp:useBean />`: 자바 인스턴스를 준비한다. 보관소에서 자바 인스턴스를 꺼내거나 자바 인스턴스를 새로 만들어 보관소에 저장하는 코드를 생성한다. 자바 인스턴스를 자바 빈(Java Bean)이라고 부른다.
 <jsp:setProperty>	자바 빈의 프로퍼티 값을 설정한다.
 자바 객체의 settet()를 호출하는 코드를 생성한다.
 <jsp:getProperty>	자바 빈의 프로퍼티 값을 꺼낸다.
@@ -175,12 +173,12 @@ ServletRequest 객체에 매개변수를 추가하는 코드를 생성한다.
 <jsp:element>	임의의 XML 태그나 HTML 태그를 생성한다.
  
 
-### JSP Implicit Objects(내장 객체)내장 객체
+### JSP 내장 객체(JSP Implicit Objects)
 
 JSP 기술 사양서에 정의된 필수적인 9개 객체
 
- 
 request, response, pageContext, session, application, config, out, page, exception
+
 JSP에서 자바 코드를 작성할때 별도의 선언 없이 사용할 수 있는 자바 객체이다.
 
 예를 들어 JSP에서 선언 없이 사용할 수 있는 request 객체가 이에 해당한다.
