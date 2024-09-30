@@ -4,7 +4,7 @@
 2. 스크립트릿(Scriptlet): `<% ... %>`
 3. Declarations: `<%! ... %>`
 4. 표현식(Expressions): `<%= ... %>`
-5. JSP 액션(JSP Action): `<jsp: />`
+5. JSP 액션(JSP Action): `<jsp:... />`
 
 ### Directives(지시자)
 
@@ -117,7 +117,9 @@ JSP 표현식의 예
 
 따라서 JSP 표현식 안에는 out.println()의 안자값으로 넣을 수 있는 결과를 반환하는 자바 코드가 와야한다.
 
-**5. JSP Action**
+**5. JSP 액션(JSP Action)**
+
+`<jsp:액션 속성="값" 속성="값" ... />`
 
 JSP에서 기본으로 제공하는 태그들의 집합을 'JSP Action'이라 한다.
 
@@ -134,3 +136,7 @@ JSP에서 기본으로 제공하는 태그들의 집합을 'JSP Action'이라 �
 ServletRequest 객체에 매개변수를 추가하는 코드를 생성한다.
 <jsp:plugin>	OBJECT 또는 EMBED HTML 태그를 생성한다.
 <jsp:element>	임의의 XML 태그나 HTML 태그를 생성한다.
+
+보안 때문에
+데이터를 저장하는 방식이
+쿠키 -> 세션 -> 토큰으로 변화
