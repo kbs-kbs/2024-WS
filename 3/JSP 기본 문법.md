@@ -28,11 +28,22 @@ jsp로부터 생성된 자바 서블릿 파일의 소스를 열어보면 템플�
 |액션태그|\<jsp:action />|페이지 삽입, 공유, 자바빈 사용 등|
  
 
-### JSP 내장 객체(JSP Implicit Objects)
+### JSP 내장 객체
 
 JSP에서 자바 코드를 작성할때 별도의 선언 없이 사용할 수 있는 자바 객체이다.
 
-request, response, pageContext, session, application, config, out, page, exception
+종류
+|타입|객체|설명|
+|---|---|---|
+|*javax.servlet.http.HttpServletRequest*|request|클라이언트의 요청 정보|
+|*javax.servlet.http.HttpServletResponse*|response||
+|*javax.servlet.jsp.PageContext*|pageContext||
+|*javax.servlet.jsp.HttpSession*|session||
+|*javax.servlet.ServletContext*|application||
+|*javax.servlet.jsp.JspWriter*|config||
+|*javax.servlet.ServletConfig*|out||
+|*java.lang.Object*|page||
+|*java.lang.Throwable*|exception||
 
 JSP로부터 생성된 자바 서블릿 소스의 _jspService()를 보면 해당 객체들의 변수가 선언되어 있는 것을 확인할 수 있다.
 (exception은 JSP가 예외 처리 페이지로 선언된 경우에만 존재)
