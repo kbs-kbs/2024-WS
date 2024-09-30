@@ -36,14 +36,15 @@ JSP에서 자바 코드를 작성할때 별도의 선언 없이 사용할 수 �
 |타입|객체|설명|
 |---|---|---|
 |*javax.servlet.http.HttpServletRequest*|request|클라이언트의 요청 정보|
-|*javax.servlet.http.HttpServletResponse*|response||
-|*javax.servlet.jsp.PageContext*|pageContext||
-|*javax.servlet.jsp.HttpSession*|session||
-|*javax.servlet.ServletContext*|application||
-|*javax.servlet.jsp.JspWriter*|config||
-|*javax.servlet.ServletConfig*|out||
-|*java.lang.Object*|page||
-|*java.lang.Throwable*|exception||
+|*javax.servlet.http.HttpServletResponse*|response|서버의 응답 정보|
+|*javax.servlet.jsp.PageContext*|pageContext|jsp 페이지에 대한 정보|
+|*javax.servlet.jsp.HttpSession*|session|http 세션 정보|
+|*javax.servlet.ServletContext*|application|웹 어플리케이션에 대한 정보|
+|*javax.servlet.jsp.JspWriter*|config|jsp 페이지가 생성하는 결과를 출력
+하는 출력 스트림|
+|*javax.servlet.ServletConfig*|out|jsp 페이지에 대한 설정 정보|
+|*java.lang.Object*|page|jsp 페이지를 구현하는 자바 클래스 인스턴스|
+|*java.lang.Throwable*|exception|예외(Exception) 객체, 예외처리 페이지에서 사용|
 
 JSP로부터 생성된 자바 서블릿 소스의 _jspService()를 보면 해당 객체들의 변수가 선언되어 있는 것을 확인할 수 있다.
 (exception은 JSP가 예외 처리 페이지로 선언된 경우에만 존재)
