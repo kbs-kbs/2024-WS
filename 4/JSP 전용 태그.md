@@ -16,7 +16,7 @@
 
 **page 지시자**
 
-page 지시자는 JSP 페이지와 관련된 속성을 정의할때 사용하는 태그이다.
+JSP 페이지의 속성을 정의합니다.
 
 예:
 `<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>`
