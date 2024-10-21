@@ -1,4 +1,6 @@
-## JSP 전용 태그의 종류
+## JSP 전용 태그
+
+### 종류
 
 1. 지시자(Directives): `<%@ ... %>`
 2. 스크립트릿(Scriptlet): `<% ... %>`
@@ -8,11 +10,9 @@
 
 ### Directives(지시자)
 
-`<%@ 지시자 속성="값" 속성="값" ... %>`
-
-JSP 지시자는 지시자, 속성에 따라 자바 코드를 생성한다.
-
-JSP 지시자에는 page, taglib, include가 있다.
+```jsp
+<%@ 지시자 속성="값" 속성="값" ... %>
+```
 
 **page 지시자**
 
@@ -41,12 +41,11 @@ language 속성은 JSP 엔진에 정보를 제공하는 역할이며 따로 코�
 
 taglib는 태그 라이브러리를 선언할때 사용한다.
 
-예시 : JSTL Core 태그 라이브러리 선언
+예시: JSTL Core 태그 라이브러리 선언
 
 ```
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 ```
- 
 
 속성	설명
 uri	사용할 태그 라이브러리 네임스페이스 식별자(URI)
