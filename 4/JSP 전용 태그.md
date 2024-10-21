@@ -19,8 +19,10 @@
 JSP 페이지의 속성을 정의합니다.
 
 예:
-`<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>`
- 
+
+```
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+``` 
 
 |속성|설명|
 |---|---|
