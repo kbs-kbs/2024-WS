@@ -5,3 +5,5 @@ jdbc 연동하기 위한 jsp 문 작성 4단계
 3단계 sql 쿼리 생성 단계
 
 5단계 ResultSet
+
+rs: 레코드 셋 = select 문으로 가져온 결과물
