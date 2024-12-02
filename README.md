@@ -11,3 +11,4 @@ khyunjung@naver.com
 12/9 실기
 12/16 필기
 
+세션, 쿠키
