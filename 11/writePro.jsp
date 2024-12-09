@@ -47,6 +47,9 @@
  	 pstmt.executeUpdate();
  	 
  	 str= "tblboard 테이블에 새로운 레코드를 추가했습니다.";
+ 	 
+    HttpSession ss = request.getSession();
+    ss.setAttribute("name", name);
 
  	}catch(Exception e){ 
  		e.printStackTrace();

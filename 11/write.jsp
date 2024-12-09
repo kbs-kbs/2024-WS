@@ -45,9 +45,15 @@ Write.submit();
 }
 
 </SCRIPT>
-
-
 </head>
+<body>
+<%
+HttpSession ss = request.getSession();
+String name = (String) session.getAttribute("name");
+if (name != null && !name.isEmpty()) {
+	out.println("환영합니다, " + name + "님!");
+}
+%>
 <center><font size='3'><b> 게시판 글쓰기 </b></font>                   
 
 <TABLE border='0' width='600' cellpadding='0' cellspacing='0'>
